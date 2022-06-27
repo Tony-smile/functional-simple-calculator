@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+:root {
+    --blue-zodiac: #0c2444;
+    --bay-ofmany: #24447b;
+    --mischka: #d0ceda;
+    --dodger-blue: #3482f7;
+    --bright-turquoise: #24e7ef;
+    --slate-gray: #66748a;
+    --pickled-bluewood: #364767;
+    --biscay: #1b3463;
+    --surfie-green: #0e688a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans' sans-serif;
+    background-color: rgb(34, 7, 7);
+    height: 100vh;
+    width: 100vw;
+}
+
+#container {
+    display: grid;
+    place-content: center;
+    height: 83%;
+    width: 80%;
+    background-image: url(https://source.unsplash.com/random/600×1080/?tech,javascript);
+    background-color: var(--biscay);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.2), 8px 6px 20px 8 rgba(0, 0, 0, 0.19);
+
+}
+
+#calculator {
+    width: 360px;
+    height: 570px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.2), 8px 6px 20px 8 rgba(0, 0, 0, 0.19);
+}
+
+#result {
+    background-color: var(--blue-zodiac);
+    border-top: 2px solid var(--surfie-green);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 120px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 10px 20px;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #919191;
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    color: #ffffff;
+    margin: 0px 20px;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 8;
+    font-weight: bold;
+    Font-size: 15px;
+}
+
+.number,
+.empty {
+    background-color: #def;
+}
+
+.number,
+.operator {
+    cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+    font-size: 13px;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #202;
+}
